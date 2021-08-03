@@ -1,0 +1,1086 @@
+@font-face {
+    font-family: icons;
+    src: url('icons.ttf');
+}
+
+@font-face {
+    font-family: gothic;
+    src: url('GOTHIC.ttf');
+}
+
+@font-face {
+    font-family: gothicb;
+    src: url('GOTHICB.ttf');
+}
+
+@font-face {
+    font-family: calibri;
+    src: url('calibrib.ttf');
+}
+
+.color-w {
+    color: white
+}
+
+.color-w p {
+    color: white
+}
+
+.top-down {
+    transition: 0.25s;
+    animation-name: example;
+    animation-duration: 3s;
+}
+
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+.typewriter {
+    white-space: nowrap;
+    overflow: hidden;
+    animation-name: typer;
+    animation-duration: 4s;
+    letter-spacing: 0px;
+    animation-timing-function: ease-out;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes example {
+    0% {
+        margin-top: -350px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: -20px;
+        opacity: 1;
+    }
+}
+
+.card1 {
+    background: linear-gradient( 45deg, #6C19B5, #210F80) !important;
+}
+
+.card2 {
+    background: linear-gradient( 45deg, #141414, #000000) !important;
+}
+
+@keyframes heighter {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: auto;
+    }
+}
+
+::selection {
+    background: linear-gradient( 45deg, #ff2121, #6423cedb);
+    color: black;
+    border-radius: 50px;
+    font-weight: 700;
+    background-color: tomato !important;
+}
+
+highlight {
+    background-color: tomato !important;
+}
+
+@keyframes typer {
+    0% {
+        width: 0;
+        letter-spacing: 20px;
+    }
+    50% {
+        letter-spacing: 0px;
+        width: 50%;
+    }
+}
+
+.gothicb {
+    font-family: gothicb !important;
+}
+
+html {
+    background: #eee;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.scroll-snap {
+    scroll-snap-align: center;
+}
+
+.ymandatory-scroll-snapping {
+    scroll-snap-type: y mandatory;
+    flex-flow: column nowrap;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+
+.hova {
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white !important;
+    height: 100%;
+}
+
+.rainbow {
+    background: linear-gradient( 45deg, #8000FF, #721688);
+    color: white !important;
+    box-shadow: 0px 50px 100px blueviolet;
+}
+
+.div-s {
+    box-shadow: 0px 0px 50px rgb(177, 177, 177);
+}
+
+::marker {
+    font-size: 25px;
+    margin-top: 5%;
+}
+
+.rainbow p {
+    color: white !important;
+}
+
+.hova center p {
+    color: white !important
+}
+
+body::-webkit-scrollbar-track {
+    background: orange;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: orangered;
+    /* color of the scroll thumb */
+    border-radius: 5px;
+    /* roundness of the scroll thumb */
+    border: 0px solid white;
+    /* creates padding around scroll thumb */
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+}
+
+a {
+    color: rgb(45, 77, 255) !important
+}
+
+h1 {
+    font-family: gothic;
+    font-size: 50pt;
+    font-weight: bold;
+    color: rgb(34, 34, 34) !important;
+}
+
+.bg-about {
+    background: url("../images/bg\ \(3\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.b-ritt {
+    border-left: 5px solid blueviolet;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.b-ritt:hover {
+    border-left: 20px solid blueviolet;
+    transition: 0.25s;
+    background-color: #efefef;
+}
+
+td {
+    border: 0px solid rgb(255, 255, 255);
+}
+
+.login-div:hover .w-f {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff
+}
+
+.padding-l {
+    padding-left: 10px;
+}
+
+.alert {
+    position: absolute;
+    margin: 20%;
+    height: 20px;
+    width: 25%;
+    opacity: 0;
+    animation: opaciter 5s;
+}
+
+@keyframes opaciter {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.padding {
+    padding: 15px;
+}
+
+.slide {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative !important;
+    transition: 0.25s;
+    cursor: pointer;
+    background-position: center;
+    opacity: 1;
+}
+
+.w-w {
+    color: white !important
+}
+
+.slide-n {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative !important;
+    background-position: center;
+    position: relative !important;
+}
+
+.slide:hover {
+    background-position-y: -50px;
+    background-size: 200px;
+    opacity: 1;
+    margin: 10px;
+}
+
+.slide:hover .bottom {
+    opacity: 1;
+}
+
+.image-card-container:hover {
+    box-shadow: 0px 0px 20px rgb(218, 218, 218);
+}
+
+.t-left h2 {}
+
+.image-detail {
+    height: 450px;
+}
+
+.image-card {
+    position: relative;
+    height: 200px;
+}
+
+.item-c {
+    align-items: center;
+}
+
+.w-25 {
+    width: 20%;
+}
+
+.slide .t-left {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, black, transparent) !important;
+    border-radius: 10px;
+}
+
+.radius-c {
+    border-radius: 50px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transition: 0.3s;
+    padding: 3px;
+    background: linear-gradient(0deg, black, transparent) !important
+}
+
+.t-blue h2 {
+    color: #2d8bff !important;
+}
+
+.big-icon {
+    width: 40%;
+    font-size: 64pt;
+    color: #16529b;
+}
+
+.t-left p {}
+
+.h-100 {
+    height: 650px;
+}
+
+.mrit {
+    margin-right: 2%;
+}
+
+.imgbg {
+    background: url(../images/image.jpg);
+    background-size: cover;
+    height: 300px
+}
+
+.logo {
+    width: 25px;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 5%;
+    background: rgb(76, 43, 226);
+}
+
+.w-50 {
+    width: 50%
+}
+
+.w-35 {
+    width: 35%;
+}
+
+button {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: rgb(49, 97, 255);
+    color: white;
+    text-transform: uppercase;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+.red {
+    background-color: orangered !important;
+    color: white;
+}
+
+.yellow {
+    background-color: yellow !important;
+    color: black !important;
+}
+
+.super {
+    font-size: 100px !important;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.white {
+    background: white;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0pt;
+    color: #444;
+    font-size: 10pt;
+    font-family: gothic;
+}
+
+.m-toop {
+    margin-top: 10% !important
+}
+
+.color-g {
+    color: rgba(128, 128, 128, 0.774);
+}
+
+.p-right {
+    padding-right: 35% !important;
+}
+
+.m {
+    margin: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+th {
+    font-size: 10pt;
+    border: 1px solid #eee;
+}
+
+.image-card-container {
+    height: 270px;
+    transition: 0.25s;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.eee {
+    background-color: #eee !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.w-10 {
+    width: 10%
+}
+
+.w-20 {
+    width: 20%
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.scroll-snap {
+    scroll-snap-align: start;
+    height: auto;
+    width: 50%;
+}
+
+.nav-justify {
+    justify-content: space-evenly;
+    transition: 0.25s
+}
+
+.full-heights {
+    height: 800px;
+    position: fixed;
+    width: 100%;
+    background: rgba(13, 0, 202, 0.404);
+    color: white !important;
+}
+
+.nav-justify div p {
+    color: white;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: right;
+}
+
+.t-left {
+    text-align: left !important;
+}
+
+.button-hover {
+    transition: 0.2s;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 34pt;
+}
+
+.b-none {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.card-bg {
+    background-color: #f2f5fb !important;
+    margin-bottom: 2%;
+}
+
+.button-hover p {
+    display: flex;
+}
+
+.button-hover:hover {
+    background: white;
+    color: blue;
+}
+
+.button-hover:hover p {
+    color: black;
+}
+
+icons {
+    font-family: icons;
+    font-size: 18pt;
+}
+
+.nav-justify div {
+    margin-top: 0px;
+}
+
+
+/* .nav-justify:hover {
+    width: 15%;
+} */
+
+
+/* .nav-justify:hover div p lil {
+    display: block;
+    width: 70%;
+} */
+
+
+/* .nav-justify:hover div p icons {
+    width: 20%;
+} */
+
+lil {
+    display: none;
+}
+
+.ymandatory-scroll-snapping {
+    scroll-snap-type: y mandatory;
+}
+
+.centt {
+    margin-top: 30%;
+}
+
+.icon {
+    height: 40px !important;
+    width: 40px;
+    fill: purple;
+}
+
+#icon {
+    fill: purple;
+}
+
+.dropdown {
+    width: -webkit-fill-available;
+    margin: 0 11%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.t-center {
+    text-align: center !important;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-95 {
+    width: 90%;
+}
+
+.w-f {
+    width: -webkit-fill-available;
+    transition: 0.25s;
+}
+
+.c-hover {
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.w-5 {
+    width: 5%;
+}
+
+.t-l {
+    text-align: center !important;
+}
+
+.c-hover h1 {
+    font-weight: 500;
+    font-size: 18pt;
+}
+
+.c-hover mark {
+    background: #eee;
+}
+
+.c-hover:hover {
+    background-color: rgb(249, 249, 253);
+}
+
+.c-hover:hover mark {
+    background-color: yellow;
+}
+
+.tl {
+    text-align: left;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.w-70 {
+    width: 70%
+}
+
+.w-40 {
+    width: 40%
+}
+
+input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #eee;
+    border-radius: 5px;
+    width: 70%;
+    margin: 1%
+}
+
+li {
+    margin-left: -5px;
+    font-size: 20pt;
+}
+
+.active {
+    color: white;
+    background-color: black;
+}
+
+.m-r {
+    margin-right: 2% !important;
+}
+
+.t-w {
+    color: white !important;
+    font-weight: bolder;
+}
+
+.container {
+    height: -webkit-fill-available;
+}
+
+.black {
+    background-color: #000 !important;
+}
+
+.shadower {
+    max-height: 50px;
+    box-shadow: -20px 20px 0px white;
+    color: white !important;
+    transition: 0.25s;
+}
+
+.logo1 {
+    position: absolute;
+    animation-name: languages;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background: url(../images/png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo2 {
+    position: absolute;
+    animation-name: languages;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background: url(../images/rig.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes languages {
+    0% {
+        left: 0;
+        width: 0px;
+        height: 0px
+    }
+    50% {
+        left: 200px;
+        width: 50px;
+        height: 50px
+    }
+    100% {
+        left: 400px;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@keyframes languages2 {
+    0% {
+        left: 100px;
+        width: 0px;
+        height: 0px
+    }
+    50% {
+        left: 240px;
+        width: 50px;
+        height: 50px
+    }
+    100% {
+        left: 400px;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.shadower:hover {
+    box-shadow: 0px 0px 30px white;
+}
+
+.m-l {
+    margin-left: 1%;
+}
+
+.recycler {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+ul {
+    display: inline-grid;
+    padding-left: 0px;
+    list-style-position: inside;
+    border-left: 2px solid black;
+    animation-name: heighter;
+    animation-duration: 2s;
+}
+
+.jc {
+    justify-content: space-between;
+    text-align: left !important;
+}
+
+.bubble {
+    max-width: 100%;
+    font-weight: bolder !important;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bubbles {
+    position: relative;
+    padding-top: 5%;
+    box-shadow: 0px 0px 10px #eee;
+    height: 80%;
+}
+
+.top-banner {
+    height: 8%;
+    background-color: #d2d2d2;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.no-b {
+    border-radius: 0px !important;
+}
+
+.no-p {
+    padding: 5px !important;
+}
+
+.recycler-box {
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.recycler-box:hover {
+    background-color: rgb(240, 248, 255);
+}
+
+.b-rit {
+    margin-top: 2%;
+    width: 100%;
+    text-align: right;
+}
+
+.m-top {
+    margin-top: 2%;
+}
+
+.bgpromo {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+}
+
+.b-left {
+    margin-top: 2%;
+    width: 100%;
+    position: inherit;
+}
+
+.inputs {
+    position: absolute;
+    bottom: 0;
+}
+
+tr th {
+    text-align: left !important;
+}
+
+.b p {
+    font-weight: 700 !important;
+}
+
+.ddd {
+    background: #ccc !important;
+}
+
+.t-b {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+}
+
+.c-b {
+    background-color: #2d8bff !important;
+    color: white !important;
+}
+
+.c-black {
+    color: gray !important;
+}
+
+.justify {
+    justify-content: start;
+}
+
+.avatar {
+    height: 100px !important;
+    width: 100px !important;
+}
+
+.login {
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.login-div {
+    display: none;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+largenum p {
+    font-size: 70pt !important;
+}
+
+.bg-1 {
+    background-color: blueviolet;
+    color: white !important;
+}
+
+.bg-1 p {
+    color: white !important;
+}
+
+.bg-2 {
+    background-color: rgb(212, 80, 80);
+    color: white !important;
+}
+
+.bg-2 p {
+    color: white !important;
+}
+
+.bg-2 {
+    background-color: rgb(212, 80, 80);
+    color: white !important;
+}
+
+.bg-2 p {
+    color: white !important;
+}
+
+.red {
+    background-color: rgb(223, 89, 89);
+}
+
+.bg-3 {
+    background-color: rgb(29, 29, 29);
+    color: white !important;
+}
+
+.bg-3 p {
+    color: white !important;
+}
+
+.login:hover .login-div {
+    display: block;
+    opacity: 1;
+}
+
+.avatar-c {
+    border-radius: 50%;
+}
+
+.t-blue {
+    color: #444 !important;
+}
+
+.image-cards .mrit {
+    margin-right: 2%
+}
+
+.c-b p {
+    color: white
+}
+
+.left {
+    text-align: left !important;
+}
+
+.f-flex {
+    display: flex;
+}
+
+.like-btn {
+    transition: 0.25s;
+}
+
+.like-btn:hover {
+    background-color: #2d8bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.hero-phone {
+    display: none;
+}
+
+.hero-pc {
+    display: block;
+}
+
+body {
+    padding: 0px;
+    margin: 0px !important
+}
+
+.red-c {
+    color: rgb(255, 47, 47);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.liked {
+    color: red !important;
+}
+
+#get-id {
+    cursor: pointer !important;
+}
+
+.unliked {
+    color: blue !important;
+}
+
+.red-c:hover {
+    color: rgb(0, 89, 255);
+}
+
+@media only screen and (max-width: 800px) {
+    .flex {
+        display: block !important;
+    }
+    .w-50 {
+        width: -webkit-fill-available;
+    }
+    .w-30 {
+        width: -webkit-fill-available;
+    }
+    .w-40 {
+        width: -webkit-fill-available;
+    }
+    .image-card-container {
+        margin-bottom: 17% !important;
+        margin-top: 10%;
+    }
+    .w-80 {
+        width: -webkit-fill-available;
+    }
+    .navs {
+        position: fixed;
+        width: -webkit-fill-available !important;
+        z-index: 2;
+    }
+    li center .w-80 {
+        width: 80% !important;
+    }
+    body {
+        padding: 0px;
+        margin: 0px !important
+    }
+    .mrit {
+        margin: 0px;
+    }
+    #ss {
+        display: none;
+    }
+    .image-detail {
+        display: none;
+    }
+    #img {
+        display: block !important;
+    }
+    .image-card .bottom {
+        opacity: 1;
+    }
+    #commenter {
+        height: 400px !important;
+    }
+    .typewriter {
+        color: white !important
+    }
+    .jc icons {
+        color: black !important
+    }
+    .hero-phone {
+        display: block;
+    }
+    .hero-pc {
+        display: none;
+    }
+}
