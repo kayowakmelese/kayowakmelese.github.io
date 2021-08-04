@@ -13,10 +13,7 @@
     src: url('GOTHICB.ttf');
 }
 
-@font-face {
-    font-family: calibri;
-    src: url('calibrib.ttf');
-}
+
 
 .color-w {
     color: white
