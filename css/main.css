@@ -43,6 +43,7 @@ span {
     animation-name: typer;
     animation-duration: 4s;
     letter-spacing: 0px;
+    font-size: 40px;
     animation-timing-function: ease-out;
 }
 
@@ -58,7 +59,7 @@ span {
         opacity: 0;
     }
     100% {
-        margin-top: -20px;
+        margin-top: 10%;
         opacity: 1;
     }
 }
@@ -150,6 +151,12 @@ body::-webkit-scrollbar {
 ::marker {
     font-size: 25px;
     margin-top: 5%;
+}
+
+mark {
+    background-color: orange;
+    font-weight: bolder;
+    font-size: 20pt
 }
 
 .rainbow p {
@@ -699,11 +706,16 @@ li {
     background-color: #000 !important;
 }
 
+.gray {
+    background-color: rgb(71, 71, 71) !important;
+}
+
 .shadower {
     max-height: 50px;
     box-shadow: -20px 20px 0px white;
     color: white !important;
-    transition: 0.25s;
+    transition: 0.55s;
+    border-right: 0px solid black;
 }
 
 .logo1 {
@@ -714,6 +726,34 @@ li {
     background: url(../images/png.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+q::before {
+    font-size: 64pt;
+    font-weight: bolder;
+    color: gray;
+    height: 10px;
+    font-family: icons;
+    ;
+}
+
+q::after {
+    font-size: 64pt;
+    font-weight: bolder;
+    color: gray;
+    height: 10px;
+    font-family: icons;
+}
+
+.quot {
+    hanging-punctuation: 20pt;
+}
+
+.quot::first-letter {
+    font-size: 64pt;
+    font-weight: bolder;
+    color: gray;
+    font-family: icons;
 }
 
 .logo2 {
@@ -764,6 +804,8 @@ li {
 
 .shadower:hover {
     box-shadow: 0px 0px 30px white;
+    background-color: rgb(55, 0, 255) !important;
+    border-right: 50px solid rgb(51, 0, 172);
 }
 
 .m-l {
