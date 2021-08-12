@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialicons/v95/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+    font-family: 'icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v95/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
 
 @font-face {
@@ -11,28 +11,27 @@
     font-weight: 400;
     src: local('Century Gothic'), url('https://fonts.cdnfonts.com/s/18111/GOTHIC.woff') format('woff');
 }
+
 @font-face {
     font-family: 'gothici';
     font-style: italic;
     font-weight: 400;
     src: local('Century Gothic'), url('https://fonts.cdnfonts.com/s/18111/GOTHICI.woff') format('woff');
 }
+
 @font-face {
     font-family: 'gothicb';
     font-style: normal;
     font-weight: 700;
     src: local('Century Gothic'), url('https://fonts.cdnfonts.com/s/18111/GOTHICB.woff') format('woff');
 }
+
 @font-face {
     font-family: 'Century Gothicbl';
     font-style: italic;
     font-weight: 700;
     src: local('Century Gothic'), url('https://fonts.cdnfonts.com/s/18111/GOTHICBI.woff') format('woff');
 }
-
-
-
-
 
 .color-w {
     color: white
@@ -48,9 +47,58 @@
     animation-duration: 3s;
 }
 
-span {
+.blink {
     border-right: .05em solid;
     animation: caret 1s steps(1) infinite;
+}
+
+.t-rit {
+    text-align: right;
+}
+
+.title {
+    font-size: 30pt;
+}
+
+.border-bottom {
+    border-bottom: 1px solid blueviolet;
+    transition: 10s;
+}
+
+.border-bottom:hover {
+    width: 100%;
+}
+
+.product-color {
+    transition: 0.25s;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+.product-description {
+    transition: 0.25s;
+    opacity: 0;
+    display: none;
+    animation: opacity 1s;
+    box-shadow: 0px 0px 50px gray;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.product-color:hover .product-description {
+    display: block;
+    opacity: 1;
+}
+
+.product-color:hover {
+    filter: grayscale(0)
 }
 
 .typewriter {
@@ -97,6 +145,10 @@ span {
     }
 }
 
+.h2-lil {
+    font-size: 15pt !important;
+}
+
 ::selection {
     background: linear-gradient( 45deg, #ff2121, #6423cedb);
     color: black;
@@ -131,6 +183,7 @@ html {
     margin: 0px;
     padding: 0px;
     background-repeat: no-repeat;
+    scroll-behavior: smooth;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -203,7 +256,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 a {
-    color: rgb(45, 77, 255) !important
+    color: rgb(68, 68, 68) !important;
+    font-family: gothic;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+a:hover {
+    font-weight: 900;
+    color: black !important;
+    font-size: 26pt;
 }
 
 h1 {
