@@ -147,6 +147,8 @@
 
 .h2-lil {
     font-size: 15pt !important;
+    font-weight: bolder;
+    color: orangered
 }
 
 ::selection {
@@ -208,9 +210,17 @@ body::-webkit-scrollbar {
 }
 
 .rainbow {
-    background: linear-gradient( 45deg, #8000FF, #721688);
+    background: linear-gradient( 45deg, #868686, #1d1d1d);
     color: white !important;
     box-shadow: 0px 50px 100px blueviolet;
+}
+
+#about {
+    padding-top: 15%
+}
+
+#package {
+    padding-top: 15%
 }
 
 .div-s {
