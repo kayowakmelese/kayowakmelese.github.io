@@ -1,36 +1,21 @@
 @font-face {
-    font-family: 'icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/materialicons/v95/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+    font-family: icons;
+    src: url('icons.ttf');
 }
 
 @font-face {
-    font-family: 'gothic';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Century Gothic'), url('https://fonts.cdnfonts.com/s/18111/GOTHIC.woff') format('woff');
+    font-family: gothic;
+    src: url('GOTHIC.ttf');
 }
 
 @font-face {
-    font-family: 'gothici';
-    font-style: italic;
-    font-weight: 400;
-    src: local('Century Gothic'), url('https://fonts.cdnfonts.com/s/18111/GOTHICI.woff') format('woff');
+    font-family: gothicb;
+    src: url('GOTHICB.ttf');
 }
 
 @font-face {
-    font-family: 'gothicb';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Century Gothic'), url('https://fonts.cdnfonts.com/s/18111/GOTHICB.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Century Gothicbl';
-    font-style: italic;
-    font-weight: 700;
-    src: local('Century Gothic'), url('https://fonts.cdnfonts.com/s/18111/GOTHICBI.woff') format('woff');
+    font-family: calibri;
+    src: url('calibrib.ttf');
 }
 
 .color-w {
@@ -47,58 +32,9 @@
     animation-duration: 3s;
 }
 
-.blink {
+span {
     border-right: .05em solid;
     animation: caret 1s steps(1) infinite;
-}
-
-.t-rit {
-    text-align: right;
-}
-
-.title {
-    font-size: 30pt;
-}
-
-.border-bottom {
-    border-bottom: 1px solid blueviolet;
-    transition: 10s;
-}
-
-.border-bottom:hover {
-    width: 100%;
-}
-
-.product-color {
-    transition: 0.25s;
-    filter: grayscale(1);
-    cursor: pointer;
-}
-
-.product-description {
-    transition: 0.25s;
-    opacity: 0;
-    display: none;
-    animation: opacity 1s;
-    box-shadow: 0px 0px 50px gray;
-}
-
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.product-color:hover .product-description {
-    display: block;
-    opacity: 1;
-}
-
-.product-color:hover {
-    filter: grayscale(0)
 }
 
 .typewriter {
@@ -107,7 +43,6 @@
     animation-name: typer;
     animation-duration: 4s;
     letter-spacing: 0px;
-    font-size: 40px;
     animation-timing-function: ease-out;
 }
 
@@ -123,7 +58,7 @@
         opacity: 0;
     }
     100% {
-        margin-top: 10%;
+        margin-top: -20px;
         opacity: 1;
     }
 }
@@ -143,12 +78,6 @@
     100% {
         height: auto;
     }
-}
-
-.h2-lil {
-    font-size: 15pt !important;
-    font-weight: bolder;
-    color: orangered
 }
 
 ::selection {
@@ -185,7 +114,6 @@ html {
     margin: 0px;
     padding: 0px;
     background-repeat: no-repeat;
-    scroll-behavior: smooth;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -210,17 +138,9 @@ body::-webkit-scrollbar {
 }
 
 .rainbow {
-    background: linear-gradient( 45deg, #868686, #1d1d1d);
+    background: linear-gradient( 45deg, #8000FF, #721688);
     color: white !important;
     box-shadow: 0px 50px 100px blueviolet;
-}
-
-#about {
-    padding-top: 15%
-}
-
-#package {
-    padding-top: 15%
 }
 
 .div-s {
@@ -230,12 +150,6 @@ body::-webkit-scrollbar {
 ::marker {
     font-size: 25px;
     margin-top: 5%;
-}
-
-mark {
-    background-color: orange;
-    font-weight: bolder;
-    font-size: 20pt
 }
 
 .rainbow p {
@@ -266,16 +180,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 a {
-    color: rgb(68, 68, 68) !important;
-    font-family: gothic;
-    font-weight: 600;
-    transition: 0.25s;
-}
-
-a:hover {
-    font-weight: 900;
-    color: black !important;
-    font-size: 26pt;
+    color: rgb(45, 77, 255) !important
 }
 
 h1 {
@@ -794,16 +699,11 @@ li {
     background-color: #000 !important;
 }
 
-.gray {
-    background-color: rgb(71, 71, 71) !important;
-}
-
 .shadower {
     max-height: 50px;
     box-shadow: -20px 20px 0px white;
     color: white !important;
-    transition: 0.55s;
-    border-right: 0px solid black;
+    transition: 0.25s;
 }
 
 .logo1 {
@@ -814,34 +714,6 @@ li {
     background: url(../images/png.png);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-q::before {
-    font-size: 64pt;
-    font-weight: bolder;
-    color: gray;
-    height: 10px;
-    font-family: icons;
-    ;
-}
-
-q::after {
-    font-size: 64pt;
-    font-weight: bolder;
-    color: gray;
-    height: 10px;
-    font-family: icons;
-}
-
-.quot {
-    hanging-punctuation: 20pt;
-}
-
-.quot::first-letter {
-    font-size: 64pt;
-    font-weight: bolder;
-    color: gray;
-    font-family: icons;
 }
 
 .logo2 {
@@ -892,8 +764,6 @@ q::after {
 
 .shadower:hover {
     box-shadow: 0px 0px 30px white;
-    background-color: rgb(55, 0, 255) !important;
-    border-right: 50px solid rgb(51, 0, 172);
 }
 
 .m-l {
